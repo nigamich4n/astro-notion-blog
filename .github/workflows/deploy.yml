@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   schedule:
-    - cron: '0 18 * * *' # 3am JST (UTC: 18:00)
+    - cron: '0 18 * * 0/2' # 3am JST every other Sunday (UTC: 18:00 every other Saturday)
   workflow_dispatch:
 
 jobs:
